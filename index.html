@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="array_input">
+                <p>Size of array</p>
+                <input type="range" min="20" max="150" id="a_size" step="1" value="80">
+                <p>Speed of algorithm</p>
+                <input type="range" id="a_speed" min="1" max="5" step="1" value="4">
+                <button id="a_generate">Generate array</button>
+            </div>
+            <div class="header_right">
+                <p class="navbar_heading">Sorting visualizer</p>
+                <div class="algos">
+                    <button>Bubble</button>
+                    <button>Selection</button>
+                    <button>Insertion</button>
+                    <button>heap</button>
+                    <button>merge</button>
+                    <button>quick</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="array_container">
+            
+        </div>
+    </section>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/visual.js"></script>
+    <script src="./scripts/bubble.js"></script>
+    <script src="./scripts/selection.js"></script>
+    <script src="./scripts/insertion.js"></script>
+    <script src="./scripts/heap.js"></script>
+    <script src="./scripts/merge.js"></script>
+    <script src="./scripts/quick.js"></script>
+</body>
+</html>
